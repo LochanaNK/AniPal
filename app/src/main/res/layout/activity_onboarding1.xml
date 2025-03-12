@@ -1,56 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/onboarding1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@drawable/bg"
     tools:context=".MainActivity">
 
+    <!-- Logo -->
     <ImageView
         android:id="@+id/Logo"
         android:layout_width="wrap_content"
         android:layout_height="222dp"
         android:src="@drawable/anipal_logo"
-        android:layout_gravity="center_horizontal" />
+        android:layout_marginTop="100sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/app_name"/>
 
+    <!-- Title -->
     <TextView
         android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/go3"
-        android:gravity="center"
         android:text="@string/title"
         android:textColor="@color/white"
-        android:textAlignment="center"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/Logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <TextView
-        android:id="@+id/description1"
-        android:layout_width="300sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="75sp"
-        android:fontFamily="@font/go3"
-        android:text="@string/description1"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:visibility="invisible" />
+    <!-- Fragment Container (Replaces TextView) -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="275sp"
+        app:layout_constraintTop_toBottomOf="@id/Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/next_btn"/>
 
+    <!-- Next Button -->
     <Button
-        android:id="@+id/next_btn1"
-        android:layout_marginTop="75sp"
-        android:layout_width="150sp"
-        android:layout_height="60sp"
-        android:text="@string/next_btn"
-        android:fontFamily="@font/go3"
-        android:textColor="@color/white"
-        android:textAlignment="gravity"
-        android:textSize="25sp"
+        android:id="@+id/next_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="@color/button"
-        android:visibility="invisible" />
+        android:fontFamily="@font/go3"
+        android:text="@string/next_btn"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragmentContainer" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

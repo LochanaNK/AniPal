@@ -1,9 +1,43 @@
 <resources>
     <string name="app_name">AniPal</string>
     <string name="Title">AniPal</string>
-    <string name="description1">your Trusted pal for customizing your favourite anime Watchlists and recommendations ...🎭</string>
     <string name="title">ANIPAL</string>
+
+    //buttons
     <string name="next_btn">Next</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in_underlined"><u>Sign In</u></string>
+    <string name="sign_up_underlined"><u>Create One!</u></string>
+    <string name="forgot_password_underlined"><u>Forgot Password?</u></string>
+
+    //descriptions
+    <string name="description1">your Trusted pal for customizing your favourite anime Watchlists
+        and recommendations ...🎭</string>
+    <string name="description2">You can create personalized watch lists for your desired anime
+        using the categories ...🎭</string>
+    <string name="description3">Also with the in built mood selector, you can further customize
+        your watch lists ...🎭</string>
+    <string name="description4">Your anime journey starts here ...🎭</string>
+    <string name="signup_title">Your Journey Begins Now !</string>
+    <string name="signin_title">Hey, Welcome Back !</string>
+    <string name="forgot_password_title">Forgot your password ?
+        No worries😊 !</string>
+
+    //input field labels
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_username">Username</string>
+    <string name="label_confirmpas">Confirm Password</string>
+
+
+    <string name="login_link_text">Already have an account?</string>
+    <string name="signup_link_text">Don\'t have an account?</string>
+    <string name="continue_with_google">Continue with google</string>
+
+    //content descriptions
+    <string name="profile_icon">profile icon</string>
+    <string name="camera_icon">camera icon</string>
+    <string name="logo">logo</string>
+    <string name="google_icon_color">google icon color</string>
 </resources>
