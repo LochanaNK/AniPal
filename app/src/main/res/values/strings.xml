@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AniPal</string>
+    <string name="Title">AniPal</string>
+    <string name="description1">your Trusted pal for customizing your favourite anime Watchlists and recommendations ...🎭</string>
+    <string name="title">ANIPAL</string>
+    <string name="next_btn">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
