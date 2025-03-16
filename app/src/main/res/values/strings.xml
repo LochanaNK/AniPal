@@ -32,6 +32,7 @@
     <string name="label_confirmpas">Confirm Password</string>
     <string name="label_otp">OTP</string>
     <string name="label_new_password">New Password</string>
+    <string name="label_search">Search</string>
 
 
     <string name="login_link_text">Already have an account?</string>
@@ -43,4 +44,9 @@
     <string name="camera_icon">camera icon</string>
     <string name="logo">logo</string>
     <string name="google_icon_color">google icon color</string>
+    <string name="trending">Trending</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

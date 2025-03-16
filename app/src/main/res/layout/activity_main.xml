@@ -25,6 +25,5 @@
         android:textColor="@color/white"
         android:textAlignment="center"
         android:textSize="50sp"
-
         android:visibility="invisible"/>
 </LinearLayout>

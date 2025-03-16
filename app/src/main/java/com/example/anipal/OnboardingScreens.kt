@@ -47,7 +47,6 @@ class OnboardingScreens: AppCompatActivity() {
                         .commit()
                     currentStep++
                 }
-
                 2 -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, OnBoarding3())
@@ -66,10 +65,8 @@ class OnboardingScreens: AppCompatActivity() {
 
             }
 
-
         }
 
     }
-
 
 }

@@ -1,5 +1,6 @@
 package com.example.anipal
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.anipal.databinding.ActivityForgotPasswordBinding
@@ -13,5 +14,11 @@ class ForgotPassword: AppCompatActivity() {
 
         bind = ActivityForgotPasswordBinding.inflate(layoutInflater)
         setContentView(bind.root)
+
+        bind.resetPassword.setOnClickListener{
+            val intent = Intent(this,HomePage::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
