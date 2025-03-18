@@ -21,7 +21,7 @@ class SignUp: AppCompatActivity() {
 
 
         bind.signup.setOnClickListener{
-            val intent = Intent(this,HomePage::class.java)
+            val intent = Intent(this,HomeView::class.java)
             startActivity(intent)
             finish()
         }

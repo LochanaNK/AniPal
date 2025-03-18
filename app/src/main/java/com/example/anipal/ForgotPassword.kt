@@ -16,7 +16,7 @@ class ForgotPassword: AppCompatActivity() {
         setContentView(bind.root)
 
         bind.resetPassword.setOnClickListener{
-            val intent = Intent(this,HomePage::class.java)
+            val intent = Intent(this,HomeView::class.java)
             startActivity(intent)
             finish()
         }

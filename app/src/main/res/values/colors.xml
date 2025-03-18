@@ -5,4 +5,5 @@
     <color name="button">#9D0208</color>
     <color name="dark_blue">#03071E</color>
     <color name="light_blue">#0C8CE9</color>
+    <color name="gradient_black">#8B000000</color>
 </resources>

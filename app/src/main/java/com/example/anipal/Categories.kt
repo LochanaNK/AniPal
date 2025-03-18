@@ -1,20 +1,21 @@
 package com.example.anipal
 
-
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.anipal.databinding.ActivityHomepageBinding
+import com.example.anipal.databinding.ActivityCategoriesBinding
 
-class HomePage: AppCompatActivity() {
+class Categories : AppCompatActivity() {
 
-    private lateinit var bind: ActivityHomepageBinding
+    private lateinit var bind: ActivityCategoriesBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        bind = ActivityHomepageBinding.inflate(layoutInflater)
+        bind = ActivityCategoriesBinding.inflate(layoutInflater)
         setContentView(bind.root)
+
     }
 }

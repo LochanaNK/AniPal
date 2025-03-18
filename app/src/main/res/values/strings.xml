@@ -2,6 +2,8 @@
     <string name="app_name">AniPal</string>
     <string name="Title">AniPal</string>
     <string name="title">ANIPAL</string>
+    <string name="mood_title">Select Your Mood</string>
+    <string name="mood_description">You can customize your watch list according to the mood you choose.</string>
 
     //buttons
     <string name="next_btn">Next</string>
@@ -11,6 +13,16 @@
     <string name="sign_in_underlined"><u>Sign In</u></string>
     <string name="sign_up_underlined"><u>Create One!</u></string>
     <string name="forgot_password_underlined"><u>Forgot Password?</u></string>
+
+    <string name="mood1">Happy</string>
+    <string name="mood2">Sad</string>
+    <string name="mood3">Stressed</string>
+    <string name="mood4">Bored</string>
+    <string name="mood5">Epic</string>
+    <string name="mood6">Nostalgic</string>
+    <string name="mood7">Romantic</string>
+    <string name="mood8">Energetic</string>
+
 
     //descriptions
     <string name="description1">your Trusted pal for customizing your favourite anime Watchlists
@@ -45,8 +57,48 @@
     <string name="logo">logo</string>
     <string name="google_icon_color">google icon color</string>
     <string name="trending">Trending</string>
+    <string name="movie">Movie</string>
     <string name="title_activity_bottom_navigation">BottomNavigation</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="menu">Menu</string>
+    <string name="tiles">scroll tiles</string>
+
+
+    //trending tile titles
+
+    <string name="trending1_title">Solo Leveling</string>
+    <string name="trending2_title">Apothecary Diaries</string>
+    <string name="trending3_title">Dandadan</string>
+    <string name="trending4_title">Frieren</string>
+    <string name="trending5_title">My Hero Academia</string>
+
+    //trending tile descriptions
+    <string name="trending1_description">Action, Adventure, Fantasy</string>
+    <string name="trending2_description">Adventure, Mystery, Slice of life, Drama</string>
+    <string name="trending3_description">Action, Adventure,Comedy,  Fantasy</string>
+    <string name="trending4_description">Action, Adventure, Fantasy, Slice of life, Comedy</string>
+    <string name="trending5_description">Action, Adventure, Sci-Fi, Comedy</string>
+
+    //movies tile titles
+
+    <string name="movie1_title">Tenki No Ko</string>
+    <string name="movie2_title">Garden Of Words</string>
+    <string name="movie3_title">I Want To Eat
+        Your Pancreas</string>
+    <string name="movie4_title">Suzume No Tojimari</string>
+    <string name="movie5_title">Your Name</string>
+
+    //movies tile descriptions
+    <string name="movie1_description">Slice of life, Adventure, Fantasy</string>
+    <string name="movie2_description">Slice of life, Romance, Drama</string>
+    <string name="movie3_description">Slice of life, Romance, Drama</string>
+    <string name="movie4_description">Slice of life, Adventure, Fantasy, Mystery</string>
+    <string name="movie5_description">Slice of life, Adventure, Fantasy, Mystery</string>
+
+
+    //navbar
+
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="lists">Lists</string>
+    <string name="categories">Categories</string>
 </resources>
