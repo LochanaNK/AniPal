@@ -18,10 +18,6 @@
             android:exported="true"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".BottomNavigation"
-            android:exported="false"
-            android:label="@string/title_activity_bottom_navigation" />
-        <activity
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize"
             android:exported="true"
@@ -53,12 +49,12 @@
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HomePage"
+            android:name=".HomeView"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HomeView"
+            android:name=".Profile"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait" />

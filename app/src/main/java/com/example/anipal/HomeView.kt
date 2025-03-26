@@ -16,7 +16,6 @@ class HomeView : AppCompatActivity() {
 
         bottomNavigationView.setOnItemSelectedListener { item ->
             val selectedFragment: Fragment
-            val message: String
 
             when (item.itemId) {
                 R.id.nav_home -> {
@@ -42,7 +41,6 @@ class HomeView : AppCompatActivity() {
             true
         }
 
-        // Load default fragment
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainer, HomeFragment())
