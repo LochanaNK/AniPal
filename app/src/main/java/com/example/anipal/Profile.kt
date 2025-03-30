@@ -2,6 +2,7 @@ package com.example.anipal
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
@@ -15,9 +16,19 @@ class Profile : AppCompatActivity() {
         recentButton.setOnClickListener {
             openFragment(RecentFragment())
         }
+        val myListButton = findViewById<Button>(R.id.my_lists)
+        myListButton.setOnClickListener {
+            openFragment(MyListFragment())
+        }
+        val backButton = findViewById<ImageView>(R.id.back_button)
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
+
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainer, HomeFragment())
+                .replace(R.id.fragment_container, MyListFragment())
                 .commit()
         }
     }
@@ -25,7 +36,6 @@ class Profile : AppCompatActivity() {
     private fun openFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
-            .addToBackStack(null)
             .commit()
     }
 

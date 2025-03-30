@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrendingCardFragment"
+    android:background="@drawable/bg">
+
+    <FrameLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:contentDescription="@string/back"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_left_arrow" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:contentDescription="@string/back"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_profile" />
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/tile_image"
+        android:layout_width="200dp"
+        android:layout_height="350dp"
+        android:src="@drawable/solo_leveling"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trending1_title"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"/>
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:scrollbars="none"
+        android:overScrollMode="always">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/synopsis1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"/>
+    </ScrollView>
+
+
+</FrameLayout>

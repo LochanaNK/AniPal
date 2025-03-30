@@ -49,9 +49,10 @@ class CategoriesFragment : Fragment() {
         yearView.setAdapter(adapter2)
 
         profile.setOnClickListener {
-            val intent = Intent(requireContext(), Profile::class.java)
+            val intent = Intent(activity, Profile::class.java)
             startActivity(intent)
         }
+
         genreView.setOnClickListener{
             genreView.setDropDownHeight(400)
             genreView.showDropDown()

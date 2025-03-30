@@ -29,6 +29,12 @@ class OnBoarding4 : Fragment() {
         val fadeIn = AnimationUtils.loadAnimation(requireContext(), R.anim.fade_in)
         view.startAnimation(fadeIn)
 
+        bind.signIn.setOnClickListener{
+            val intent = Intent(requireActivity(),SignIn::class.java)
+            startActivity(intent)
+            requireActivity().finish()
+        }
+
         bind.signUp.setOnClickListener{
             val intent = Intent(requireActivity(),SignUp::class.java)
             startActivity(intent)
